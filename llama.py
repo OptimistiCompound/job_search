@@ -79,7 +79,7 @@ def apply_rotary_embeddings(
 
     x_rotated = x_complex * freq_complex
 
-    x_out = torch.view_as_real(x_out)
+    x_out = torch.view_as_real(x_rotated)
     x_out = x_out.reshape(*x.shape)
     return x_out.type_as(x).to(device)
 

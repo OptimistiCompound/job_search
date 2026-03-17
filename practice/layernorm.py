@@ -9,7 +9,7 @@ class BatchNorm(nn.Module):
         
 ##################################################
 
-# [*] Caution:
+# [*] Caution:p
 #   1. first add eps then sqrt
 
 class LayerNorm(nn.Module):
